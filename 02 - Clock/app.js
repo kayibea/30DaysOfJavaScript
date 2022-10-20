@@ -1,18 +1,18 @@
-const deg = 6;
+const ROTATION_DEGREE = 6;
 // getting all hands of clock from html through id
 const hr = document.querySelector("#hr");
 const mn = document.querySelector("#mn");
 const sc = document.querySelector("#sc");
 
 setInterval(() => {
-  let day = new Date();
+  const now = new Date();
 
   //setting the actual seconds minutes and hour in clock
 
-  let ms = day.getMilliseconds() * deg;
-  let hh = day.getHours() * 30;
-  let mm = day.getMinutes() * deg;
-  let ss = day.getSeconds() * deg + ms / 1000;
+  const ms = now.getMilliseconds() * ROTATION_DEGREE;
+  const hh = now.getHours() * 30;
+  const mm = now.getMinutes() * ROTATION_DEGREE;
+  const ss = now.getSeconds() * ROTATION_DEGREE + ms / 1000;
 
   //changing the degrees in the style as per the time
 
