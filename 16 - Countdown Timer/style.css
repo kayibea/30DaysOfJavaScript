@@ -27,6 +27,9 @@ h1{
     top: 0;
     padding-top: 120px;
 }
+h2{
+    margin-bottom: 20px;
+}
 
 #start-button{
     position: absolute;
@@ -135,6 +138,12 @@ h1{
 
 #reset {
     grid-area: 3 / 3 / 3 / 5;
+    display: none;
+}
+
+#pause {
+    grid-area: 3 / 4 / 3 / 6;
+    display: none;
 }
 footer {
     text-align: center;
@@ -152,3 +161,7 @@ footer {
 footer a:visited {
     color: inherit;
 }
+
+#centered-text {
+    text-align: center;
+  }
